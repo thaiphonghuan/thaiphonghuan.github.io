@@ -115,3 +115,31 @@ p {
 .about-item li {
   margin-bottom: 6px;
 }
+
+.project-video {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.project-desc h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #007acc;
+}
+
+.project-desc ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.project-desc li {
+  margin-bottom: 6px;
+}
+
+.project-desc p {
+  margin: 10px 0;
+}
