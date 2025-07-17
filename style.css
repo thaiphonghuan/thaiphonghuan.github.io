@@ -243,6 +243,36 @@ p {
   margin: 10px 0;
   font-size: 15px;
   line-height: 1.6; 
+<<<<<<< HEAD
+=======
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
+  .links a {
+    margin: 0 8px;
+    font-size: 16px;
+  }
+  .section h2 {
+    font-size: 20px;
+  }
+  .about-item {
+    min-width: 100%; 
+  }
+  .container {
+    margin: 20px 10px; 
+    padding: 15px;
+  }
+  .navbar ul {
+    gap: 15px; 
+  }
+  .navbar li a {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+>>>>>>> 4225e309d4cca1d8095ac0bffbf637828a8e99b5
 }
 
 @media (max-width: 600px) {
