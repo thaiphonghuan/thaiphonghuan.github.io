@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Thêm thanh điều hướng -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#project">Project</a></li>
+    </ul>
+  </nav>
+
   <div class="container">
     <div class="profile">
       <img src="Avatar.jpg" alt="Profile Picture" class="avatar" />
@@ -19,48 +28,78 @@
       </div>
     </div>
 
-    <div class="section">
-    <h2>👨‍🎓 About Me</h2>
-    <div class="about-grid">
+    <!-- Đặt ID cho các phần để navbar có thể điều hướng tới -->
+    <div class="section" id="about-me">
+      <h2>👨‍🎓 About Me</h2>
+      <div class="about-grid">
         <div class="about-item">
-        <h3>Field of Study</h3>
-        <p>Artificial Intelligence (AI)</p>
+          <h3>Field of Study</h3>
+          <p>Artificial Intelligence (AI)</p>
         </div>
         <div class="about-item">
-        <h3>Research Interests</h3>
-        <ul>
+          <h3>Research Interests</h3>
+          <ul>
             <li>Natural Language Processing (NLP)</li>
             <li>Large Language Models (LLM)</li>
+            <li>Retrieval Augmented Generation (RAG)</li>
             <li>AI Agents</li>
-        </ul>
+          </ul>
         </div>
-    </div>
+        <!-- Cột Technical Skills đã được loại bỏ theo yêu cầu -->
+      </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="publications">
       <h2>🔬 Publications</h2>
       <ul>
         <li>
           <a href="https://doi.org/10.1007/978-3-031-80943-9_86" target="_blank">
             A Hybrid Dialogue System for Student Mental Health Assessment and Support
           </a>
+          <!-- Thêm tóm tắt (Abstract) -->
+          <p class="publication-abstract">
+            With the increasing prevalence of mental health issues, especially among university students, depression has emerged as a concern requiring effective support. To partially mitigate this, we develop a Vietnamese dialogue system that automates mental healthcare services for students facing significant stress...(Click the title to read more)
+          </p>
+          <!-- Thêm 2 hình ảnh được xếp ngang -->
+          <div class="publication-images">
+            <img src="pp1_1.png" alt="Figure 1 from Hybrid Dialogue System paper">
+            <img src="pp1-2.png" alt="Figure 2 from Hybrid Dialogue System paper">
+          </div>
         </li>
         <li>
           <a href="https://doi.org/10.1007/978-3-031-80943-9_66" target="_blank">
             Vietnamese Traffic Sign Detection for Advanced Driving Assistant: Comparison Between YOLOv8 and Faster RCNN
           </a>
+          <!-- Thêm tóm tắt (Abstract) -->
+          <p class="publication-abstract">
+            With a market size of 100 million people, autonomous vehicles are poised to become a popular solution in the world in general and in Vietnam in particular shortly. However, the self-driving car system faces a significant challenge due to the limited availability of data on the current traffic conditions in Vietnam. Specifically, datasets and models for sign recognition in Vietnam are scarce, potentially impacting the widespread adoption of autonomous vehicles in the country. This article addresses the detection of common road traffic sign patterns using two models: Yolov8 and Faster R-CNN...(Click the title to read more)
+          </p>
+          <!-- Thêm 2 hình ảnh được xếp ngang -->
+          <div class="publication-images">
+            <img src="pp2_1.png" alt="Figure 1 from Traffic Sign Detection paper">
+            <img src="pp2_2.png" alt="Figure 2 from Traffic Sign Detection paper">
+          </div>
         </li>
         <li>
           <a href="https://doi.org/10.1145/3711403.3711446" target="_blank">
             The Rapid Development of AI and Its Impact on Technologically Lagging Students
           </a>
+          <!-- Thêm tóm tắt (Abstract) -->
+          <p class="publication-abstract">
+            The rapid advancement of artificial intelligence (AI) technology brings significant opportunities and challenges in the field of education. This progress creates a disparity in access and proficiency with AI technology, especially for those unfamiliar with it. This can lead to pressure from peers or society in general for those who cannot keep up with technological developments. This study highlights the pressures faced by students who struggle to keep pace with the development of AI, analyzing and evaluating the aspects these students encounter...(Click the title to read more)
+          </p>
+          <!-- Thêm 2 hình ảnh được xếp ngang -->
+          <div class="publication-images">
+            <img src="pp3_1.png" alt="Figure 1 from AI Impact paper">
+            <img src="pp3_2.png" alt="Figure 2 from AI Impact paper">
+          </div>
         </li>
       </ul>
     </div>
     
-    <div class="section">
+    <div class="section" id="project">
       <h2>🚀 Project</h2>
-      <h3>Traffic Flow Realtime</h3>
+      <h3>Traffic Flow Realtime</h3> 
       <video controls autoplay loop muted class="project-video">
         <source src="Video.mp4" type="video/mp4">
         Your browser does not support the video tag.
