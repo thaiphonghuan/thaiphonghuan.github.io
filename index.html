@@ -1,201 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Huan Thai Phong - Personal Site</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huan Thai Phong | AI Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font chữ hiện đại -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Thêm thanh điều hướng -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about-me">About Me</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#project">Project</a></li>
-    </ul>
-  </nav>
 
-  <div class="container">
-    <!-- START: PHẦN THÔNG TIN CÁ NHÂN -->
-    <div class="profile">
-      <img src="Avatar.jpg" alt="Profile Picture" class="avatar" />
-      <div class="profile-info">
-        <h1>Huan Thai Phong</h1>
-        <p>3rd-year student at FPT University</p>
-        <div class="links">
-          <a href="https://scholar.google.com.vn/citations?hl=vi&view_op=list_works&authuser=1&gmla=AH8HC4wRATE-jU2oDptKRRIDDfpnfC7Xm--N5TztVAv6_VP6x3JecQGr2IAiW7FwlRu5Qukq4wRz5_LEloC6zUgSx_RW6Lyce2s" target="_blank">🎓Google Scholar</a>
-          <a href="https://github.com/thaiphonghuan" target="_blank">💻GitHub</a>
-          <a href="mailto:huantpce180685@fpt.edu.vn">✉️Email Contact</a>
+    <!-- SIDEBAR DỌC CHUYÊN NGHIỆP -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="avatar-wrapper">
+                <img src="Avatar.jpg" alt="Profile Picture">
+            </div>
+            <h3>Huan Thai Phong</h3>
+            <p class="university">FPT University</p>
         </div>
-      </div>
-    </div>
-    <!-- END: PHẦN THÔNG TIN CÁ NHÂN -->
+        
+        <nav class="sidebar-nav">
+            <button class="nav-btn active" onclick="showSection('about-me', 'About Me')">
+                <span class="icon">👤</span> About Me
+            </button>
+            <button class="nav-btn" onclick="showSection('awards', 'Awards & Achievements')">
+                <span class="icon">🏆</span> Awards
+            </button>
+            <button class="nav-btn" onclick="showSection('publications', 'Publications')">
+                <span class="icon">🔬</span> Publications
+            </button>
+            <button class="nav-btn" onclick="showSection('project', 'Project')">
+                <span class="icon">🚀</span> Projects
+            </button>
+        </nav>
+    </aside>
 
-    <!-- START: PHẦN ABOUT ME -->
-    <div class="section" id="about-me">
-      <h2>👨‍🎓 About Me</h2>
-      <p class="about-summary">
-        As a passionate AI Researcher and Engineer, I am dedicated to building intelligent systems that solve real-world problems. My interests lie in Natural Language Processing and Real life AI Application, with a focus on developing robust and efficient models.
-      </p>
-      <div class="about-content-grid">
-        <div class="about-card full-width-card">
-          <h3>🏆 Awards & Achievements</h3>
-          <ul class="awards-list">
-            <li><strong>Top 1</strong> - Autonomous Car FPT, Can Tho 2023</li>
-            <li><strong>Top 3</strong> - Business Challenge FPT, Can Tho 2023</li>
-            <li><strong>Top 8</strong> - FPT Digital Race 2023</li>
-            <li><strong>Top 10</strong> - Tra Vinh University Startup Competition 2023</li>
-            <li><strong>Consolation Prize</strong> - FPT Edu Research Festival 2024</li>
-            <li>Certificate of Participation - Student Scientific Research Prize 2024</li>
-            <li><strong>Consolation Prize</strong> - FPT Edu Research Festival 2025</li>
-          </ul>
+    <!-- NỘI DUNG CHÍNH -->
+    <main class="main-content">
+        
+        <!-- BANNER HIỆU ỨNG BLUR & TIÊU ĐỀ ĐỘNG -->
+        <header class="hero-banner">
+            <div class="banner-bg"></div>
+            <div class="banner-overlay">
+                <h1 id="dynamic-title">About Me</h1>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            
+            <!-- SECTION: ABOUT ME (HIỆN MẶC ĐỊNH) -->
+            <section id="about-me" class="tab-content active">
+                <div class="intro-box">
+                    <span class="welcome-tag">Welcome to my Portfolio</span>
+                    <h2>Hello, I'm Huan Thai Phong</h2>
+                    <p class="tagline">3rd-year AI Student & Researcher</p>
+                    <hr class="divider">
+                    
+                    <p class="bio">
+                        As a passionate AI Researcher and Engineer, I am dedicated to building intelligent systems that solve real-world problems. My interests lie in Natural Language Processing and Real-life AI Applications.
+                    </p>
+
+                    <div class="about-social">
+                        <a href="https://github.com/thaiphonghuan" target="_blank" class="social-card github">
+                            <span class="s-icon">💻</span> GitHub
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=BejgevgAAAAJ&hl=en" target="_blank" class="social-card scholar">
+                            <span class="s-icon">🎓</span> Scholar
+                        </a>
+                        <a href="mailto:huantpce180685@fpt.edu.vn" class="social-card email">
+                            <span class="s-icon">✉️</span> Email
+                        </a>
+                    </div>
+
+                    <div class="contact-grid">
+                        <div class="c-item">
+                            <span class="c-label">Email</span>
+                            <span class="c-value">huantpce180685@fpt.edu.vn</span>
+                        </div>
+                        <div class="c-item">
+                            <span class="c-label">Location</span>
+                            <span class="c-value">Can Tho, Vietnam</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: AWARDS (ĐÃ CẬP NHẬT ĐẦY ĐỦ) -->
+            <section id="awards" class="tab-content">
+                <h2 class="section-title">Awards & Achievements</h2>
+                <div class="timeline">
+                    <!-- 2025 -->
+                    <div class="t-item">
+                        <div class="t-year">2025</div>
+                        <div class="t-content">Consolation Prize - FPT Edu Research Festival 2025</div>
+                    </div>
+                    <!-- 2024 -->
+                    <div class="t-item">
+                        <div class="t-year">2024</div>
+                        <div class="t-content">Consolation Prize - FPT Edu Research Festival 2024</div>
+                    </div>
+                    <div class="t-item">
+                        <div class="t-year">2024</div>
+                        <div class="t-content">Certificate of Participation - Student Scientific Research Prize 2024</div>
+                    </div>
+                    <!-- 2023 -->
+                    <div class="t-item">
+                        <div class="t-year">2023</div>
+                        <div class="t-content">Top 1 - Autonomous Car FPT, Can Tho 2023</div>
+                    </div>
+                    <div class="t-item">
+                        <div class="t-year">2023</div>
+                        <div class="t-content">Top 3 - Business Challenge FPT, Can Tho 2023</div>
+                    </div>
+                    <div class="t-item">
+                        <div class="t-year">2023</div>
+                        <div class="t-content">Top 8 - FPT Digital Race 2023</div>
+                    </div>
+                    <div class="t-item">
+                        <div class="t-year">2023</div>
+                        <div class="t-content">Top 10 - Tra Vinh University Startup Competition 2023</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: PUBLICATIONS -->
+            <section id="publications" class="tab-content">
+                <h2 class="section-title">Featured Research</h2>
+                
+                <div class="pub-featured-card">
+                    <div class="pub-info">
+                        <span class="pub-tag">ICTA 2024</span>
+                        <h3>A Hybrid Dialogue System for Student Mental Health Assessment and Support</h3>
+                        <p>We develop a Vietnamese dialogue system that automates mental healthcare services for students facing significant stress.</p>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-80943-9_86" target="_blank" class="pub-link">View more →</a>
+                    </div>
+                    <div class="pub-gallery">
+                        <img src="pp1_1.png" alt="Graph 1">
+                        <img src="pp1-2.png" alt="Graph 2">
+                    </div>
+                </div>
+
+                <div class="pub-featured-card">
+                    <div class="pub-info">
+                        <span class="pub-tag">ICTA 2024</span>
+                        <h3>Vietnamese Traffic Sign Detection for Advanced Driving Assistant: Comparison Between YOLOv8 and Faster RCNN</h3>
+                        <p>Evaluating state-of-the-art detection models on Vietnamese road conditions to improve autonomous vehicle systems.</p>
+                        <a href="https://doi.org/10.1007/978-3-031-80943-9_66" target="_blank" class="pub-link">View more →</a>
+                    </div>
+                    <div class="pub-gallery">
+                        <img src="pp2_1.png" alt="Detection 1">
+                        <img src="pp2_2.png" alt="Detection 2">
+                    </div>
+                </div>
+
+                <h2 class="section-title mt-50">Other Publications</h2>
+                <div class="pub-list-simple">
+                    <div class="pub-simple-item">
+                        <div class="pub-text-content">
+                            <span class="type-tag journal">Journal</span>
+                            <h4>ENHANCING FEW-SHOT LEARNING PERFORMANCE WITH BOOSTING ON TRANSFORMERS: EXPERIMENTS ON SENTIMENT ANALYSIS TASKS</h4>
+                        </div>
+                        <a href="https://www.bibliomed.org/?mno=234386" target="_blank" class="simple-link">View more</a>
+                    </div>
+
+                    <div class="pub-simple-item">
+                        <div class="pub-text-content">
+                            <span class="type-tag conference">ICEIR 2025</span>
+                            <h4>EMOTION RECOGNITION IN SPEECH USING CNN-LSTM NETWORKS WITH DATA AUGMENTATION AND OPTIMIZATION TECHNIQUES</h4>
+                        </div>
+                        <a href="https://iceir.nctu.edu.vn/" target="_blank" class="simple-link">View more</a>
+                    </div>
+
+                    <div class="pub-simple-item">
+                        <div class="pub-text-content">
+                            <span class="type-tag conference">ICEIR 2025</span>
+                            <h4>ROBUST LUNG NODULE CLASSIFICATION ON IMBALANCED CT DATASETS VIA TRANSFER LEARNING AND DATA AUGMENTATION</h4>
+                        </div>
+                        <a href="https://iceir.nctu.edu.vn/" target="_blank" class="simple-link">View more</a>
+                    </div>
+
+                    <div class="pub-simple-item">
+                        <div class="pub-text-content">
+                            <span class="type-tag conference">ICETM 2024</span>
+                            <h4>The Rapid Development of AI and Its Impact on Technologically Lagging Students</h4>
+                        </div>
+                        <a href="https://doi.org/10.1145/3711403.3711446" target="_blank" class="simple-link">View more</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: PROJECT -->
+            <section id="project" class="tab-content">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="p-card">
+                        <div class="p-media"><video src="Video.mp4" autoplay muted loop></video></div>
+                        <div class="p-info"><h4>Traffic Flow Realtime</h4></div>
+                    </div>
+                    <div class="p-card">
+                        <div class="p-media"><img src="project_2.jpg" alt="P2"></div>
+                        <div class="p-info"><h4>Handsign Communication</h4></div>
+                    </div>
+                </div>
+            </section>
+
         </div>
-      </div>
-    </div>
-    <!-- END: PHẦN ABOUT ME -->
+    </main>
 
-    <div class="section" id="publications">
-      <h2>🔬 Publications</h2>
-      <ul>
-        <!-- Paper 1 -->
-        <li>
-          <a href="https://doi.org/10.1007/978-3-031-80943-9_86" target="_blank">
-            A Hybrid Dialogue System for Student Mental Health Assessment and Support
-          </a>
-          <p class="publication-abstract">
-            With the increasing prevalence of mental health issues, especially among university students, depression has emerged as a concern requiring effective support. To partially mitigate this, we develop a Vietnamese dialogue system that automates mental healthcare services for students facing significant stress...(Click the title to read more)
-          </p>
-          <div class="publication-images">
-            <img src="pp1_1.png" alt="Figure 1 from Hybrid Dialogue System paper">
-            <img src="pp1-2.png" alt="Figure 2 from Hybrid Dialogue System paper">
-          </div>
-        </li>
-        <!-- Paper 2 -->
-        <li>
-          <a href="https://doi.org/10.1007/978-3-031-80943-9_66" target="_blank">
-            Vietnamese Traffic Sign Detection for Advanced Driving Assistant: Comparison Between YOLOv8 and Faster RCNN
-          </a>
-          <p class="publication-abstract">
-            With a market size of 100 million people, autonomous vehicles are poised to become a popular solution in the world in general and in Vietnam in particular shortly. However, the self-driving car system faces a significant challenge due to the limited availability of data on the current traffic conditions in Vietnam... (Click the title to read more)
-          </p>
-          <div class="publication-images">
-            <img src="pp2_1.png" alt="Figure 1 from Traffic Sign Detection paper">
-            <img src="pp2_2.png" alt="Figure 2 from Traffic Sign Detection paper">
-          </div>
-        </li>
-        <!-- Vị trí thứ 3 MỚI (Paper 5 cũ) -->
-        <li>
-          <a href="#" target="_blank">
-            EMOTION RECOGNITION IN SPEECH USING CNN-LSTM NETWORKS WITH DATA AUGMENTATION AND OPTIMIZATION TECHNIQUES
-          </a>
-          <p class="publication-abstract">
-            Speech Emotion Recognition (SER) is a key area of affective computing that lets machines identify human emotions from vocal signals. Although there have been big advances, SER is still a challenge because of the complex nature of emotional expression...
-          </p>
-          <div class="publication-images">
-            <img src="pp5_1.png" alt="Figure 1 from Emotion Recognition paper">
-            <img src="pp5_2.png" alt="Figure 2 from Emotion Recognition paper">
-          </div>
-        </li>
-
-        <!-- Các paper ẩn -->
-        <!-- Paper 4 -->
-        <li class="hidden-publication">
-          <a href="https://www.bibliomed.org/?mno=234386" target="_blank">
-            ENHANCING FEW-SHOT LEARNING PERFORMANCE WITH BOOSTING ON TRANSFORMERS: EXPERIMENTS ON SENTIMENT ANALYSIS TASKS
-          </a>
-          <p class="publication-abstract">
-            This study addresses challenges in sentiment analysis for low-resource educational contexts by proposing a framework that integrates Few-Shot Learning (FSL) with Transformer-based ensemble models and boosting techniques... (Click the title to read more)
-          </p>
-          <div class="publication-images">
-            <img src="pp4_1.png" alt="Figure 1 from Boosting on Transformers paper">
-          </div>
-        </li>
-        <!-- Vị trí thứ 5 MỚI (Paper 3 cũ), giờ đã được ẩn -->
-        <li class="hidden-publication">
-          <a href="https://doi.org/10.1145/3711403.3711446" target="_blank">
-            The Rapid Development of AI and Its Impact on Technologically Lagging Students
-          </a>
-          <p class="publication-abstract">
-            The rapid advancement of artificial intelligence (AI) technology brings significant opportunities and challenges in the field of education. This progress creates a disparity in access and proficiency with AI technology, especially for those unfamiliar with it... (Click the title to read more)
-          </p>
-          <div class="publication-images">
-            <img src="pp3_1.png" alt="Figure 1 from AI Impact paper">
-            <img src="pp3_2.png" alt="Figure 2 from AI Impact paper">
-          </div>
-        </li>
-        <!-- Paper 6 -->
-        <li class="hidden-publication">
-          <a href="#" target="_blank">
-            ROBUST LUNG NODULE CLASSIFICATION ON IMBALANCED CT DATASETS VIA TRANSFER LEARNING AND DATA AUGMENTATION
-          </a>
-          <p class="publication-abstract">
-            Lung cancer diagnosis from computed tomography scans is often hampered by data scarcity and significant class imbalance, undermining the reliability of deep learning models. This study presents a robust framework for multi-class lung nodule classification...
-          </p>
-          <div class="publication-images">
-            <img src="pp6_1.png" alt="Figure 1 from Lung Nodule paper">
-            <img src="pp6_2.png" alt="Figure 2 from Lung Nodule paper">
-          </div>
-        </li>
-      </ul>
-      <!-- Nút View More -->
-      <button id="viewMoreBtn">View More</button>
-    </div>
-    
-    <!-- START: PHẦN PROJECT -->
-    <div class="section" id="project">
-      <h2>🚀 Project</h2>
-      <div class="project-grid">
-
-        <!-- Project 1 -->
-        <div class="project-item">
-          <h3>Traffic Flow Realtime</h3> 
-          <video controls autoplay loop muted class="project-media">
-            <source src="Video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-item">
-          <h3>Handsign and Voice Communication</h3>
-          <img src="project_2.jpg" alt="Handsign and Voice Communication Project" class="project-media">
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-item">
-          <h3>Machine Translation with ASR</h3>
-          <img src="project_3.jpg" alt="Machine Translation with ASR Project" class="project-media">
-        </div>
-
-        <!-- NEW: Thẻ "View More on GitHub" -->
-        <div class="project-item project-view-more">
-          <a href="https://github.com/thaiphonghuan" target="_blank">
-            <h3>View More on GitHub</h3>
-            <p>Explore all my repositories and contributions.</p>
-          </a>
-        </div>
-
-      </div>
-    </div>
-    <!-- END: PHẦN PROJECT -->
-
-  </div>
-
-  <!-- JavaScript để xử lý nút bấm -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const viewMoreBtn = document.getElementById('viewMoreBtn');
-      const hiddenPublications = document.querySelectorAll('.hidden-publication');
-
-      viewMoreBtn.addEventListener('click', function() {
-        hiddenPublications.forEach(pub => {
-          pub.style.display = 'list-item';
-        });
-        viewMoreBtn.style.display = 'none';
-      });
-    });
-  </script>
-
+    <script>
+        function showSection(id, title) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            document.getElementById('dynamic-title').innerText = title;
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
