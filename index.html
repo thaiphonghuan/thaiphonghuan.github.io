@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huan Thai Phong | AI Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font chữ hiện đại -->
+    <!-- Font chữ chuyên nghiệp -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -49,7 +49,7 @@
 
         <div class="content-wrapper">
             
-            <!-- SECTION: ABOUT ME (HIỆN MẶC ĐỊNH) -->
+            <!-- SECTION: ABOUT ME -->
             <section id="about-me" class="tab-content active">
                 <div class="intro-box">
                     <span class="welcome-tag">Welcome to my Portfolio</span>
@@ -86,41 +86,17 @@
                 </div>
             </section>
 
-            <!-- SECTION: AWARDS (ĐÃ CẬP NHẬT ĐẦY ĐỦ) -->
+            <!-- SECTION: AWARDS -->
             <section id="awards" class="tab-content">
                 <h2 class="section-title">Awards & Achievements</h2>
                 <div class="timeline">
-                    <!-- 2025 -->
-                    <div class="t-item">
-                        <div class="t-year">2025</div>
-                        <div class="t-content">Consolation Prize - FPT Edu Research Festival 2025</div>
-                    </div>
-                    <!-- 2024 -->
-                    <div class="t-item">
-                        <div class="t-year">2024</div>
-                        <div class="t-content">Consolation Prize - FPT Edu Research Festival 2024</div>
-                    </div>
-                    <div class="t-item">
-                        <div class="t-year">2024</div>
-                        <div class="t-content">Certificate of Participation - Student Scientific Research Prize 2024</div>
-                    </div>
-                    <!-- 2023 -->
-                    <div class="t-item">
-                        <div class="t-year">2023</div>
-                        <div class="t-content">Top 1 - Autonomous Car FPT, Can Tho 2023</div>
-                    </div>
-                    <div class="t-item">
-                        <div class="t-year">2023</div>
-                        <div class="t-content">Top 3 - Business Challenge FPT, Can Tho 2023</div>
-                    </div>
-                    <div class="t-item">
-                        <div class="t-year">2023</div>
-                        <div class="t-content">Top 8 - FPT Digital Race 2023</div>
-                    </div>
-                    <div class="t-item">
-                        <div class="t-year">2023</div>
-                        <div class="t-content">Top 10 - Tra Vinh University Startup Competition 2023</div>
-                    </div>
+                    <div class="t-item"><div class="t-year">2025</div><div class="t-content">Consolation Prize - FPT Edu Research Festival 2025</div></div>
+                    <div class="t-item"><div class="t-year">2024</div><div class="t-content">Consolation Prize - FPT Edu Research Festival 2024</div></div>
+                    <div class="t-item"><div class="t-year">2024</div><div class="t-content">Certificate of Participation - Student Scientific Research Prize 2024</div></div>
+                    <div class="t-item"><div class="t-year">2023</div><div class="t-content">Top 1 - Autonomous Car FPT, Can Tho 2023</div></div>
+                    <div class="t-item"><div class="t-year">2023</div><div class="t-content">Top 3 - Business Challenge FPT, Can Tho 2023</div></div>
+                    <div class="t-item"><div class="t-year">2023</div><div class="t-content">Top 8 - FPT Digital Race 2023</div></div>
+                    <div class="t-item"><div class="t-year">2023</div><div class="t-content">Top 10 - Tra Vinh University Startup Competition 2023</div></div>
                 </div>
             </section>
 
@@ -163,7 +139,6 @@
                         </div>
                         <a href="https://www.bibliomed.org/?mno=234386" target="_blank" class="simple-link">View more</a>
                     </div>
-
                     <div class="pub-simple-item">
                         <div class="pub-text-content">
                             <span class="type-tag conference">ICEIR 2025</span>
@@ -171,7 +146,6 @@
                         </div>
                         <a href="https://iceir.nctu.edu.vn/" target="_blank" class="simple-link">View more</a>
                     </div>
-
                     <div class="pub-simple-item">
                         <div class="pub-text-content">
                             <span class="type-tag conference">ICEIR 2025</span>
@@ -179,7 +153,6 @@
                         </div>
                         <a href="https://iceir.nctu.edu.vn/" target="_blank" class="simple-link">View more</a>
                     </div>
-
                     <div class="pub-simple-item">
                         <div class="pub-text-content">
                             <span class="type-tag conference">ICETM 2024</span>
@@ -193,14 +166,38 @@
             <!-- SECTION: PROJECT -->
             <section id="project" class="tab-content">
                 <h2 class="section-title">Featured Projects</h2>
-                <div class="project-grid">
-                    <div class="p-card">
-                        <div class="p-media"><video src="Video.mp4" autoplay muted loop></video></div>
-                        <div class="p-info"><h4>Traffic Flow Realtime</h4></div>
+
+                <!-- Project 1: Traffic Flow -->
+                <div class="project-detailed-card">
+                    <div class="project-visual">
+                        <video src="Video.mp4" autoplay muted loop class="p-video"></video>
                     </div>
-                    <div class="p-card">
-                        <div class="p-media"><img src="project_2.jpg" alt="P2"></div>
-                        <div class="p-info"><h4>Handsign Communication</h4></div>
+                    <div class="project-text">
+                        <h3>Traffic Flow Realtime</h3>
+                        <p class="p-type"><strong>Type:</strong> Multi-object tracking and Real-time video streaming</p>
+                        <div class="tech-stack">
+                            <span>Yolov8</span><span>Flask</span><span>OpenCV</span><span>COCO Dataset</span><span>SVM</span><span>Pandas</span><span>Numpy</span><span>GeoJSON</span>
+                        </div>
+                        <div class="achievement-box">
+                            <strong>Achievement:</strong> Multiple real-time objects with video streaming, and then make traffic flow predictions for that route.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Speech Translator -->
+                <div class="project-detailed-card">
+                    <div class="project-visual">
+                        <img src="project_3.jpg" alt="Speech Translator" class="p-img">
+                    </div>
+                    <div class="project-text">
+                        <h3>Vietnamese Speech to English Translator</h3>
+                        <p class="p-type"><strong>Type:</strong> Machine Translation, Speech to Text, NER</p>
+                        <div class="tech-stack">
+                            <span>wav2vec2</span><span>NLLB-200</span><span>NER-base-bert</span><span>Real-time</span><span>ASR</span>
+                        </div>
+                        <div class="achievement-box">
+                            <strong>Achievement:</strong> Real-time processing, achieving superior ASR results on two datasets VIVOS (WER 0.0997) and FOSD (WER 0.32).
+                        </div>
                     </div>
                 </div>
             </section>
